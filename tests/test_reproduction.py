@@ -10,8 +10,8 @@ TABLES = ROOT / "results" / "tables"
 
 class ReproductionTests(unittest.TestCase):
     def test_notebook_sources(self):
-        for folder in ["scripts", "appendix", "rr"]:
-            for path in (ROOT / folder).glob("*.ipynb"):
+        for folder in ["scripts", "appendix"]:
+            for path in (ROOT / folder).rglob("*.ipynb"):
                 notebook = nbformat.read(path, as_version=4)
                 nbformat.validate(notebook)
                 for i, cell in enumerate(notebook.cells):
@@ -21,7 +21,7 @@ class ReproductionTests(unittest.TestCase):
 
     def test_sample_and_text_join(self):
         corpus = pd.read_parquet(ROOT / "data" / "speeches.parquet")
-        sample = pd.read_parquet(ROOT / "rr/artifacts/classification_dataset_topic_style_50k.parquet")
+        sample = pd.read_parquet(ROOT / "data/reasoning/classification_dataset_topic_style_50k.parquet")
         self.assertEqual(len(corpus), 427014)
         self.assertEqual(len(sample), 50000)
         self.assertTrue(sample.original_row_idx.is_unique)

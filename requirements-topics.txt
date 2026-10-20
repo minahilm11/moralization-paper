@@ -1,6 +1,0 @@
-# Optional only: regenerating policy topics is a separate, expensive step.
-# GPU builds of torch may require the vendor's platform-specific installer.
-torch>=2.5,<3
-transformers>=4.46,<5
-sentencepiece>=0.2,<0.3
-

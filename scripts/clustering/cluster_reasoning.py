@@ -1,22 +1,9 @@
 #!/usr/bin/env python3
-r"""Reproduce exploratory clustering of the final no-shot GPT-4o-mini traces.
+"""Cluster reasoning embeddings with PCA, UMAP and HDBSCAN.
 
-Historical order: valid ratings -> rating-stratified draw -> clean traces ->
-120-character filter. This is not the separate 50k reasoning-style classifier.
-All writes go to a new/empty --output directory. API calls require --allow-api.
-Use --sample rr/artifacts/cluster_assignments_with_original_idx.parquet for the archived cleaned sample,
-or --input FULL_SOURCE.parquet to reconstruct the historical sample.
---prepare-only needs numpy, pandas, pyarrow; clustering additionally needs
-scikit-learn, umap-learn, hdbscan. Fresh embeddings additionally need openai.
-
-Example (offline sample and historical-cache verification):
-  python cluster_reasoning.py --input new_prompt_noshot_4omini_analysis_input.parquet \
-    --output /tmp/cluster-check --cache-dir outputs_cluster_discovery_new_prompt_noshot_4omini \
-    --prepare-only --expect-historical
-
-Numeric clustering can differ across library versions/hardware; every run
-records versions, hashes, settings, selection diagnostics, and stable row IDs.
-The historical cleaning is preserved, including incomplete numeric-score removal.
+Sampling order: valid ratings, rating-stratified draw, trace cleaning, then
+the 120-character filter. Use --sample for saved traces or --input to sample
+from the full dataset.
 """
 from __future__ import annotations
 
@@ -166,7 +153,7 @@ def prepare_sample(source):
             raise ValueError("Operational ratings differ from new_rating.")
     valid = meta[numeric.between(1, 5)].copy()
     valid["rating"] = numeric.loc[valid.index].astype(int)
-    # Empty or null trace strings MUST remain in this draw, as in notebook cell 2.
+    # Sample before removing empty traces to retain the sampling distribution.
     selected = valid
     if len(valid) > CONFIG["n_samples"]:
         rng = np.random.default_rng(CONFIG["random_state"])
@@ -192,7 +179,7 @@ def prepare_sample(source):
             if position is None:
                 continue
             record = selected.iloc[position]
-            raw = str(text).strip()  # Matches astype(str).str.strip() before notebook cleaning.
+            raw = str(text).strip()
             rows[position] = {"original_row_idx": int(record.original_row_idx),
                               "source_row_idx": int(record.source_row_idx), "new_custom_id": custom_id,
                               "rating": int(record.rating), "reasoning_raw": raw,
@@ -364,7 +351,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     inputs = parser.add_mutually_exclusive_group(required=True)
     inputs.add_argument("--input", type=Path, help="Full final-run input Parquet; reconstruct the sample.")
-    inputs.add_argument("--sample", type=Path, help="Archived cleaned sample, e.g. rr/artifacts/cluster_assignments_with_original_idx.parquet.")
+    inputs.add_argument("--sample", type=Path, help="Cleaned sample, e.g. data/reasoning/cluster_assignments_with_original_idx.parquet.")
     parser.add_argument("--output", required=True, type=Path, help="New or empty directory; existing files are never replaced.")
     parser.add_argument("--cache-dir", type=Path, help="Read-only directory with paired sample, embeddings, and run_config.json.")
     parser.add_argument("--prepare-only", action="store_true", help="Reconstruct sample and optionally validate cache; no API or clustering.")
@@ -416,7 +403,6 @@ def main(argv=None):
             raise ValueError("Embedding cache changed while copying; the snapshot is not validated.")
         embeddings = np.load(output / "reasoning_embeddings.npy", mmap_mode="r", allow_pickle=False)
     else:
-        # This is the sole API entry point and requires the parsed opt-in flag.
         if not args.allow_api:
             raise RuntimeError("API permission is required.")
         embeddings = asyncio.run(generate_embeddings(sample))

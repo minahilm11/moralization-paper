@@ -19,6 +19,8 @@ import pandas as pd
 
 from noshot_prompt import SYSTEM_PROMPT, USER_PROMPT_TEMPLATE
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
 
 def extract_tag(tag: str, text: str) -> str:
     match = re.search(rf"<{tag}>(.*?)</{tag}>", text, flags=re.DOTALL | re.IGNORECASE)
@@ -252,8 +254,8 @@ def merge_batches(args: argparse.Namespace) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["prepare", "submit", "status", "download", "merge"])
-    parser.add_argument("--input-path", type=Path, default=Path("data/speeches_1990_2022.parquet"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/noshot_4omini_batches"))
+    parser.add_argument("--input-path", type=Path, default=PROJECT_ROOT / "data/speeches_1990_2022.parquet")
+    parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "outputs/noshot_4omini_batches")
     parser.add_argument("--text-column", default="text")
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--stop", type=int, default=25000)

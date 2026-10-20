@@ -1,7 +1,4 @@
-"""Offline validation and reconstruction of the published reasoning sample.
-
-Historical cleaning and seed-42 random sampling, with stable speech IDs.
-"""
+"""Clean, sample and validate reasoning traces using stable speech IDs."""
 from __future__ import annotations
 
 import hashlib
@@ -15,7 +12,7 @@ import pyarrow.parquet as pq
 
 
 def clean_reasoning_trace(text: str) -> str:
-    """Historical classifier cleaner, including its incomplete score removal."""
+    """Remove list formatting and selected score-restatement phrases."""
     t = str(text).replace("\r", "\n")
     t = re.sub(r"\n\s*#+\s*", "\n", t)
     t = re.sub(r"\n\s*[-*]\s+", "\n", t)
@@ -63,11 +60,9 @@ def _taxonomy_ids(taxonomy: dict, kind: str, expected_count: int) -> set:
 
 
 def load_labeled_sample(path: Path, taxonomy: dict, expected_rows: int = 50000) -> pd.DataFrame:
-    """Load and validate the saved 50k artifact; label arrays become lists.
+    """Validate the 50,000-trace sample and convert label arrays to lists.
 
-    Topic lists may be empty (two historical rows have no topic label). Every
-    published row has at least one style label. Sample position is never used
-    as a substitute for original speech identity.
+    Topic lists may be empty; each trace must have at least one style label.
     """
     sample = pd.read_parquet(path)
     required = {"original_row_idx", "classification_sample_order", "rating", "reasoning_clean",
@@ -118,11 +113,10 @@ def _original_id(custom_id) -> int:
 
 
 def reconstruct_sample(source_path: Path, config: dict):
-    """Reconstruct the historical random sample with two bounded-memory passes.
+    """Draw a random sample with two bounded-memory passes.
 
     The first pass retains only eligible IDs. The second keeps text for selected
-    rows only, avoiding materializing the full 1.5 GB source dataframe. Source
-    order is preserved before pandas' random sample, exactly as historically.
+    rows only. Source order is preserved before random sampling.
     """
     source_path = Path(source_path)
     if str(config.get("sampling_strategy", "random")).lower() != "random":
@@ -139,8 +133,7 @@ def reconstruct_sample(source_path: Path, config: dict):
     columns = ["new_custom_id", "moral_reasoning", "moral_rating"]
     if not set(columns).issubset(available):
         raise ValueError("Source must contain " + ", ".join(columns) + ".")
-    # Present in the actual analysis input: verify that its operational columns
-    # still point to the new run, rather than accidentally selecting old ratings.
+    # Verify that analysis columns agree with the corresponding model outputs.
     checks = [name for name in ("new_reasoning", "new_rating") if name in available]
     source_rows = invalid_rating = missing_reasoning = too_short = 0
     eligible_ids = []

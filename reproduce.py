@@ -11,7 +11,7 @@ NOTEBOOKS = [
     "scripts/analyze_clusters.ipynb",
     "appendix/validation.ipynb",
     "appendix/examples.ipynb",
-    "rr/r_r_clustering_visuals.ipynb",
+    "scripts/clustering_visuals.ipynb",
 ]
 
 if __name__ == "__main__":

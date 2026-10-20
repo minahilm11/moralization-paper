@@ -1,7 +1,6 @@
-"""Label reasoning traces with the historical prompt and taxonomy.
+"""Assign topic and style labels to reasoning traces.
 
-API calls require explicit opt-in. Checkpoints retain raw responses and bind
-each label to its source trace, prompt, and settings.
+Checkpoints retain responses with their source traces, prompt and settings.
 """
 from __future__ import annotations
 
@@ -102,7 +101,7 @@ def extract_json_object(raw_text):
 
 
 def normalize_response(raw_text, taxonomy, limit):
-    """Historical response normalization, followed by checkpoint validation."""
+    """Normalize label IDs and validate them against the taxonomy."""
     parsed = extract_json_object(raw_text or "{}")
     normalized = {}
     for kind in ("topics", "styles"):
@@ -313,7 +312,7 @@ def main():
     parser.add_argument("--input", required=True, type=Path, help="Prepared sample Parquet.")
     parser.add_argument("--output", required=True, type=Path, help="New run directory; matching interrupted runs may resume.")
     parser.add_argument("--taxonomy", required=True, type=Path, help="Existing taxonomy JSON with topics and styles.")
-    parser.add_argument("--config", type=Path, help="Optional settings JSON; defaults preserve the historical labeling settings.")
+    parser.add_argument("--config", type=Path, help="Labeling settings JSON.")
     parser.add_argument("--allow-api", action="store_true", help="Explicitly allow paid labeling requests.")
     args = parser.parse_args()
     if not args.allow_api:

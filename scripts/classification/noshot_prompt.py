@@ -1,4 +1,4 @@
-"""No-shot moralization prompt used for the R&R full-data run."""
+"""No-shot moralization prompt."""
 
 from __future__ import annotations
 

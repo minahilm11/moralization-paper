@@ -9,7 +9,7 @@ Running descriptives & Regression analysis: scripts/moralisation_analysis.ipynb
 
 ## Run
 
-Python 3.12. The analysis data and saved R&R labels are included.
+Python 3.12. The analysis data and saved reasoning labels are included.
 
 ```sh
 python -m venv .venv
@@ -32,19 +32,21 @@ Or open the notebooks in Jupyter and run all cells with the **Moralization** ker
 | `scripts/descriptives.ipynb` | Appendix Tables A1.1-A1.3 |
 | `appendix/validation.ipynb` | Appendix Tables A4.1/A9.1 and Figures A4.1-A4.2 |
 | `appendix/examples.ipynb` | Main Table 1; Appendix Tables A2.1/A3.1 |
-| `rr/r_r_clustering_visuals.ipynb` | Additional R&R clustering and topic/style visuals |
+| `scripts/clustering_visuals.ipynb` | Additional clustering and topic/style visuals |
 
-**Policy-topic labels are not included.** Main Figure 5, Appendix A5, A6.2-A6.4 and A7, and the topic-controlled columns of Table 2 require `data/policy_topics.parquet` (`original_row_idx`, `topic_label`) or the original `data/data_with_topics.pkl`. These sections are skipped until the labels are supplied. Only load pickle files from a trusted source.
+Main Figure 5, Appendix A5, A6.2-A6.4 and A7, and the topic-controlled columns of Table 2 require `data/policy_topics.parquet` (`original_row_idx`, `topic_label`) or `data/data_with_topics.pkl`. These files are not included; the corresponding sections are skipped until labels are available.
 
 ## Classification and clustering
 
-`scripts/topic_classification.ipynb` contains the eleven-topic speech classifier. Install `requirements-topics.txt` and place the full speech-text file at `data/new_prompt_noshot_4omini_analysis_input.parquet`, or set `MORALIZATION_INPUT` to its path. New labels may change the topic-controlled estimates.
+`scripts/classification/` contains the moralization prompt and batch runner. The runner reads `data/speeches_1990_2022.parquet`; merged ratings are saved to `outputs/noshot_4omini_batches/new_prompt_noshot_4omini_ratings_all_available.parquet`.
 
-The R&R prompt, batch runner, clustering and taxonomy-labeling scripts are under `rr/`. Install `requirements-rr.txt` for new model runs; these are not executed by `reproduce.py` and can incur API costs.
+`scripts/topic_classification.ipynb` reads this merged file using `custom_id` to identify speeches and saves `data/policy_topics.parquet`. Set `MORALIZATION_INPUT` to use another file with the same columns.
+
+`scripts/clustering/` contains the reasoning clustering, taxonomy and labeling code. New API requests require `OPENAI_API_KEY`; these scripts run separately from `reproduce.py`.
 
 ```sh
-python rr/replication/scripts/cluster_reasoning.py --sample rr/artifacts/cluster_assignments_with_original_idx.parquet --output results/new_clusters --cache-dir /path/to/embedding_cache
-python rr/replication/scripts/label_reasoning.py --input rr/artifacts/classification_dataset_topic_style_50k.parquet --taxonomy rr/taxonomy.json --config rr/labeling.json --output results/new_labels --allow-api
+python scripts/clustering/cluster_reasoning.py --sample data/reasoning/cluster_assignments_with_original_idx.parquet --output results/new_clusters --cache-dir /path/to/embedding_cache
+python scripts/clustering/label_reasoning.py --input data/reasoning/classification_dataset_topic_style_50k.parquet --taxonomy scripts/clustering/taxonomy.json --config scripts/clustering/labeling.json --output results/new_labels --allow-api
 ```
 
-For the XML data-building scripts, install `requirements-data.txt`. `data/speeches.parquet` contains the ratings and metadata; speech text for the 50,000-trace sample is included in `rr/artifacts/classification_dataset_topic_style_50k.parquet`.
+`data/speeches.parquet` contains the ratings and metadata; speech text for the 50,000-trace sample is included in `data/reasoning/classification_dataset_topic_style_50k.parquet`.
