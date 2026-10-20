@@ -1,0 +1,15 @@
+style,support,avg_rating,style_label,description,specificity
+rights_based_deontological_appeal,26113,3.415846513230958,Rights-Based Deontological Appeal,"Moral claims framed as duties, rights, and non-negotiable obligations.",broad
+pragmatic_compromise_consensus,25969,2.1591512957757324,Pragmatic Compromise/Consensus,Negotiation-oriented style emphasizing compromise and workable middle-ground solutions.,broad
+procedural_neutral_descriptive,23791,1.8676810558614603,Procedural Neutral-Descriptive,Primarily procedural or descriptive statements without substantive moral argument.,broad
+fairness_equality_justice_frame,15198,3.3512962231872616,Fairness-Equality-Justice Frame,"Reasoning centered on distributive fairness, equality, and justice norms.",broad
+welfare_state_solidarity_frame,11895,3.3188734762505256,Welfare-State Solidarity Frame,"Collective solidarity, social protection, and public responsibility rhetoric.",specific
+democratic_values_rule_of_law_frame,9290,3.0368137782561893,Democratic Values and Rule-of-Law Frame,"Appeals to democracy, legitimacy, rights institutions, and constitutional norms.",broad
+evidence_statistics_expert_reference,8569,2.427587816548022,Evidence-Statistics-Expert Reference,"Justification through data points, expert authority, and empirical claims.",broad
+factual_technical_reporting,8405,1.3894110648423557,Factual/Technical Reporting,"Technocratic exposition emphasizing facts, administration, and policy mechanics.",broad
+humanitarian_compassion_frame,8025,3.6239252336448597,Humanitarian-Compassion Frame,"Empathy, vulnerability, and care for affected populations drive the reasoning.",broad
+consequentialist_cost_benefit,7244,2.547763666482606,Consequentialist Cost-Benefit,"Evaluation based on likely outcomes, trade-offs, and aggregate social consequences.",broad
+victim_protection_frame,4192,3.7822041984732824,Victim-Protection Frame,Prioritizes protection of victims and vulnerable groups as core moral imperative.,specific
+market_efficiency_competitiveness_frame,4085,1.962545899632803,Market-Efficiency Competitiveness Frame,"Economic-efficiency, productivity, and competitiveness-oriented argumentation.",specific
+public_safety_security_frame,3654,2.7534209085933226,Public Safety and Security Frame,Threat minimization and societal safety as central argumentative focus.,broad
+adversarial_blame_attack,2159,3.1829550717924966,Adversarial Blame/Attack,"Opposition-focused attack rhetoric, blame assignment, and moralized political confrontation.",broad

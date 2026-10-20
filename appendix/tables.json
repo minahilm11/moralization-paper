@@ -1,0 +1,94 @@
+{
+  "table_1": {
+    "columns": [
+      "Component",
+      "Text"
+    ],
+    "rows": [
+      [
+        "Translated speech (abridged)",
+        "Mr Speaker! Sweden shall be a voice for peace, freedom, and reconciliation, according to the government's foreign-policy declaration. Sweden shall not export weapons to states engaged in armed conflict, according to Swedish military-equipment legislation. [...] But then there is reality: Sweden exports weapons to dictatorships, belligerent states, and regimes where serious human-rights violations are part of everyday life. [...] The difference between rhetoric and reality is clearest in the government's position on cluster munitions. Cluster munitions are among the most vile forms of weapons. [...] Ninety-eight percent of those who have fallen victim to cluster munitions have been civilians, and 40 percent of the victims were children. [...] With what credibility can Sweden speak of peace in the Middle East while maintaining deep military cooperation with the occupying power Israel? With what credibility can Sweden speak of poverty reduction while selling weapons to some of the world's poorest countries? [...] The Left Party therefore calls for a fundamentally new and restrictive arms-export policy based on peace, democracy, human rights, and development, rather than narrow Swedish commercial interests."
+      ],
+      [
+        "Chain-of-thought (condensed)",
+        "The speech is built around moral framing. It appeals to Care/Harm through the emphasis on civilian and child victims of cluster munitions, and to Fairness through the contrast between Sweden's stated principles and its actual conduct, presented as a betrayal of moral duty. Rights-and-justice claims recur in the references to Iraqi and Palestinian populations. Rhetorical questions such as “How can Sweden speak of human rights while arming those who violate them?” presuppose a shared moral standard, and the sustained contrast between civilian suffering and government action raises the moral stakes throughout."
+      ],
+      [
+        "Conclusion: \nrating 5",
+        "Moral evaluation pervades the speech, which frames arms-export policy as a fundamental question of right and wrong."
+      ]
+    ]
+  },
+  "table_a2_1": {
+    "columns": [
+      "Item",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Provider",
+        "OpenAI"
+      ],
+      [
+        "Model identifier",
+        "gpt-4o-mini"
+      ],
+      [
+        "Temperature",
+        "0"
+      ],
+      [
+        "Top_p",
+        "Default (1.0)"
+      ],
+      [
+        "Max tokens (out)",
+        "5000"
+      ],
+      [
+        "Seed",
+        "42"
+      ]
+    ]
+  },
+  "table_a3_1": {
+    "columns": [
+      "Component",
+      "Text"
+    ],
+    "rows": [
+      [
+        "Translated speech (abridged)",
+        "Mr Speaker! Sweden shall be a voice for peace, freedom, and reconciliation, according to the government's foreign-policy declaration. Sweden shall not export weapons to states engaged in armed conflict, according to Swedish military-equipment legislation. Swedish arms exports shall also be guided by poverty reduction and a rights-based approach. […] But then there is reality: Sweden exports weapons to dictatorships, belligerent states, and regimes where serious human-rights violations are part of everyday life. […] The difference between rhetoric and reality is clearest in the government's position on cluster munitions. Cluster munitions are among the most vile forms of weapons. […] Ninety-eight percent of those who have fallen victim to cluster munitions have been civilians, and 40 percent of the victims were children. Sweden's military links to conflicts in Iraq, Israel/Palestine, Pakistan, and Colombia show the same pattern. With what credibility can Sweden speak of peace in the Middle East while maintaining deep military cooperation with the occupying power Israel? With what credibility can Sweden speak of poverty reduction while selling weapons to some of the world's poorest countries? How can Sweden speak of human rights while arming those who violate these rights? The Left Party therefore calls for a fundamentally new and restrictive arms-export policy based on peace, democracy, human rights, and development, rather than narrow Swedish commercial interests."
+      ],
+      [
+        "Reasoning trace 1: Moral foundations",
+        "The speech delivered in the Swedish parliament contains significant moral framing throughout its entirety. The speaker emphasizes Sweden’s role as a proponent of peace, freedom, and reconciliation, which sets a moral backdrop for the discussion on arms exports. The speaker appeals to several moral foundations, particularly:\n- Care vs. Harm: The discussion of cluster munitions and their impact on civilians, especially children, highlights the moral obligation to prevent harm. The speaker states that \"98 percent of those who have fallen victim to cluster munitions have been civilians,\" which frames the issue in terms of protecting innocent lives.\n- Fairness vs. Cheating: The speaker critiques the inconsistency between Sweden's stated principles and its actions, suggesting a betrayal of moral duty. Phrases like “we have principles, but we like them not” imply a moral failing on the part of the government.\n- Rights and Justice: The speaker invokes the rights of the oppressed, such as the Iraqi and Palestinian people, and questions the morality of Sweden’s arms exports to countries involved in human rights violations."
+      ],
+      [
+        "Reasoning trace 2: Evaluation grounded in obligation",
+        "The speaker argues that Sweden should not export weapons to countries involved in conflicts, framing this as a moral obligation rather than a pragmatic decision. The call for a new, restrictive legislation on arms exports is presented as a necessary step to align Sweden’s actions with its stated values of human rights and development."
+      ],
+      [
+        "Reasoning trace 3: Rhetorical questions",
+        "The use of rhetorical questions, such as “How can Sweden talk about human rights when we arm those who violate them?” presupposes a shared moral standard and emphasizes the moral implications of Sweden’s foreign policy."
+      ],
+      [
+        "Reasoning trace 4: Contrast structures",
+        "The speaker contrasts the suffering of civilians in conflict zones with the actions of the Swedish government, which is portrayed as indifferent or complicit in these harms. This juxtaposition serves to heighten the moral stakes of the argument."
+      ],
+      [
+        "Reasoning trace 5: Implicit moral framing",
+        "The speaker’s references to historical injustices and the ongoing suffering of specific populations (e.g., Palestinians, Iraqis) serve to frame the current policy as not just a political issue but a moral one, where inaction or complicity is portrayed as a moral failing."
+      ],
+      [
+        "Reasoning trace 6: Final moral imperative",
+        "Overall, the speech is heavily centered around moral evaluations of Sweden’s arms export policies, making moral framing a core component of the argument. The speaker’s insistence on the need for a principled approach to foreign policy underscores the moral imperative behind their claims."
+      ],
+      [
+        "Conclusion: \nrating 5",
+        "Given the pervasive nature of moral framing throughout the speech, I would rate it as a 5, indicating that the speech is built almost entirely around moral evaluation and presents the issues as fundamental questions of right and wrong."
+      ]
+    ]
+  }
+}

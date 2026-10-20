@@ -1,0 +1,34 @@
+topic,support,avg_rating,topic_label,description,specificity
+government_vs_opposition_accountability,12483,2.645678122246255,Government vs Opposition Accountability,Party-blame and accountability framing around governing performance.,broad
+procedural_parliamentary_management,10826,2.009698873083318,Procedural Parliamentary Management,"Neutral procedural interventions on debate flow, timing, or formal process.",broad
+budget_allocations_and_public_finance,9754,2.480828378101292,Budget Allocations and Public Finance,"Budget lines, appropriations, and public-finance prioritization.",broad
+municipal_and_regional_governance,6338,2.470653202903124,Municipal and Regional Governance,"Local government responsibilities, coordination, and public-service provision.",broad
+taxation_and_fiscal_policy,5784,2.630878284923928,Taxation and Fiscal Policy,"General tax burden, fairness, and fiscal policy arguments.",broad
+unemployment_and_job_creation,4894,2.76665304454434,Unemployment and Job Creation,"Labor-market unemployment, activation policies, and employment outcomes.",broad
+education_school_quality,4585,2.8911668484187567,Education and School Quality,"Debates on schooling standards, teaching quality, curriculum, and educational outcomes.",broad
+climate_policy_and_emissions,4310,2.6134570765661254,Climate Policy and Emissions,"Climate mitigation, emissions reduction, climate responsibility, and policy pace.",broad
+child_protection_and_family_welfare,4261,3.4104670265195964,Child Protection and Family Welfare,"Protection of children, family policy, parental responsibilities, and vulnerable minors.",broad
+democratic_participation_and_elections,3999,2.927481870467617,Democratic Participation and Elections,"Voting, civic participation, democratic legitimacy, and representation.",broad
+healthcare_and_patient_access,3756,2.9784345047923324,Healthcare and Patient Access,"General healthcare provision, treatment access, quality of care, and patient rights.",broad
+workers_rights_and_union_power,3427,3.0889991245987742,Workers’ Rights and Union Power,"Collective rights, workplace conditions, and labor-union power.",broad
+consumer_protection_and_market_regulation,3325,2.5497744360902255,Consumer Protection and Market Regulation,"Consumer rights, market fairness, and protective regulation.",broad
+gender_equality_and_womens_rights,3179,3.4982698961937717,Gender Equality and Women’s Rights,"Gender equality, representation, discrimination, and women’s rights claims.",broad
+transport_infrastructure_rail_road,3044,2.2230617608409986,Transport Infrastructure (Rail/Road),"Rail, roads, transport projects, and infrastructure investment priorities.",broad
+social_insurance_and_sick_leave,2980,3.058053691275168,Social Insurance and Sick Leave,"Sickness benefits, insurance agency practice, and social-protection design.",specific
+crime_policing_and_public_order,2976,2.830309139784946,"Crime, Policing, and Public Order","Crime control, policing resources, victim protection, and social safety.",broad
+rural_regional_development_and_service_access,2931,2.5636301603548275,Rural/Regional Development and Service Access,"Urban-rural disparities, regional investment, and service coverage.",broad
+small_business_and_entrepreneurship,2895,2.396545768566494,Small Business and Entrepreneurship,"Policies affecting SMEs, entrepreneurs, and business conditions.",broad
+innovation_research_and_industrial_strategy,2524,2.1846275752773376,"Innovation, Research, and Industrial Strategy","Innovation policy, research investments, and national competitiveness.",broad
+defense_nato_and_national_security,2505,2.4974051896207583,"Defense, NATO, and National Security","Military capability, defense doctrine, NATO commitments, and state security.",broad
+foreign_aid_and_humanitarian_assistance,2361,3.281660313426514,Foreign Aid and Humanitarian Assistance,"Aid priorities, development support, and humanitarian commitments abroad.",broad
+eu_membership_and_national_sovereignty,2317,2.436340094950367,EU Membership and National Sovereignty,Trade-offs between European integration and national democratic control.,broad
+immigration_asylum_and_refugees,2310,3.148917748917749,"Immigration, Asylum, and Refugees","Migration flows, asylum rights, refugee protection, and border governance.",broad
+energy_nuclear_vs_renewables,2007,2.371699053313403,Energy Policy (Nuclear vs Renewables),"Electricity production mix, nuclear policy, and renewable energy transition.",broad
+housing_and_rental_market,1906,2.637460650577125,Housing and Rental Market,"Housing supply, rental regulation, affordability, and tenant-landlord issues.",broad
+integration_and_labor_immigration,1865,3.106166219839142,Integration and Labor Immigration,Integration outcomes and labor-market participation of newcomers.,specific
+anti_discrimination_and_racism,1694,3.6103896103896105,Anti-discrimination and Racism,"Racism, discriminatory treatment, and equality-protection frameworks.",broad
+forestry_biodiversity_and_conservation,1653,2.7029643073200242,"Forestry, Biodiversity, and Conservation","Forest governance, biodiversity protection, and ecological stewardship.",specific
+authoritarian_regimes_and_human_rights,1600,3.623125,Authoritarian Regimes and Human Rights,"General condemnation of authoritarianism, repression, and rights abuses.",broad
+criminal_justice_and_rehabilitation,1570,3.035031847133758,Criminal Justice and Rehabilitation,"Courts, sentencing, prisons, rehabilitation, and recidivism policy.",specific
+elderly_care_and_dignity,1553,3.2247263361236316,Elderly Care and Dignity,"Care quality, dignity, staffing, and support for older adults.",specific
+higher_education_and_universities,1523,2.510177281680893,Higher Education and Universities,"University governance, higher-education access, and academic funding issues.",specific

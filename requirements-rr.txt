@@ -1,0 +1,4 @@
+openai==2.21.0
+umap-learn==0.5.11
+hdbscan==0.8.41
+numba==0.59.1

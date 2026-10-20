@@ -1,0 +1,12 @@
+{
+  "n_samples": 50000,
+  "sampling_strategy": "random",
+  "random_state": 42,
+  "llm_model": "gpt-5-mini",
+  "reasoning_effort": "medium",
+  "llm_max_concurrency": 200,
+  "llm_retries": 5,
+  "llm_retry_backoff_sec": 1.5,
+  "label_top_k": 4,
+  "trace_max_chars_for_labeling": 2200
+}

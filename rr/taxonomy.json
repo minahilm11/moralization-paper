@@ -1,0 +1,516 @@
+{
+  "topics": [
+    {
+      "id": "education_school_quality",
+      "label": "Education and School Quality",
+      "description": "Debates on schooling standards, teaching quality, curriculum, and educational outcomes.",
+      "specificity": "broad"
+    },
+    {
+      "id": "higher_education_and_universities",
+      "label": "Higher Education and Universities",
+      "description": "University governance, higher-education access, and academic funding issues.",
+      "specificity": "specific"
+    },
+    {
+      "id": "child_protection_and_family_welfare",
+      "label": "Child Protection and Family Welfare",
+      "description": "Protection of children, family policy, parental responsibilities, and vulnerable minors.",
+      "specificity": "broad"
+    },
+    {
+      "id": "child_pornography_and_online_harm",
+      "label": "Child Pornography and Online Harm",
+      "description": "Policy and moral arguments about child sexual abuse material and digital child protection.",
+      "specificity": "specific"
+    },
+    {
+      "id": "healthcare_and_patient_access",
+      "label": "Healthcare and Patient Access",
+      "description": "General healthcare provision, treatment access, quality of care, and patient rights.",
+      "specificity": "broad"
+    },
+    {
+      "id": "dental_care_and_coverage",
+      "label": "Dental Care and Coverage",
+      "description": "Dental care affordability, access, and policy design.",
+      "specificity": "specific"
+    },
+    {
+      "id": "elderly_care_and_dignity",
+      "label": "Elderly Care and Dignity",
+      "description": "Care quality, dignity, staffing, and support for older adults.",
+      "specificity": "specific"
+    },
+    {
+      "id": "disability_rights_and_lss",
+      "label": "Disability Rights and LSS",
+      "description": "Accessibility, disability rights, and support systems such as LSS.",
+      "specificity": "specific"
+    },
+    {
+      "id": "social_insurance_and_sick_leave",
+      "label": "Social Insurance and Sick Leave",
+      "description": "Sickness benefits, insurance agency practice, and social-protection design.",
+      "specificity": "specific"
+    },
+    {
+      "id": "unemployment_and_job_creation",
+      "label": "Unemployment and Job Creation",
+      "description": "Labor-market unemployment, activation policies, and employment outcomes.",
+      "specificity": "broad"
+    },
+    {
+      "id": "workers_rights_and_union_power",
+      "label": "Workers’ Rights and Union Power",
+      "description": "Collective rights, workplace conditions, and labor-union power.",
+      "specificity": "broad"
+    },
+    {
+      "id": "small_business_and_entrepreneurship",
+      "label": "Small Business and Entrepreneurship",
+      "description": "Policies affecting SMEs, entrepreneurs, and business conditions.",
+      "specificity": "broad"
+    },
+    {
+      "id": "taxation_and_fiscal_policy",
+      "label": "Taxation and Fiscal Policy",
+      "description": "General tax burden, fairness, and fiscal policy arguments.",
+      "specificity": "broad"
+    },
+    {
+      "id": "tax_evasion_and_shadow_economy",
+      "label": "Tax Evasion and Shadow Economy",
+      "description": "Moral/legal arguments against tax evasion and black-market practices.",
+      "specificity": "specific"
+    },
+    {
+      "id": "value_added_tax_vat",
+      "label": "Value-Added Tax (VAT)",
+      "description": "Arguments about VAT rates, VAT design, and consumption taxation impacts.",
+      "specificity": "specific"
+    },
+    {
+      "id": "property_and_wealth_taxation",
+      "label": "Property and Wealth Taxation",
+      "description": "Property, wealth, and related redistributive tax instruments.",
+      "specificity": "specific"
+    },
+    {
+      "id": "budget_allocations_and_public_finance",
+      "label": "Budget Allocations and Public Finance",
+      "description": "Budget lines, appropriations, and public-finance prioritization.",
+      "specificity": "broad"
+    },
+    {
+      "id": "housing_and_rental_market",
+      "label": "Housing and Rental Market",
+      "description": "Housing supply, rental regulation, affordability, and tenant-landlord issues.",
+      "specificity": "broad"
+    },
+    {
+      "id": "transport_infrastructure_rail_road",
+      "label": "Transport Infrastructure (Rail/Road)",
+      "description": "Rail, roads, transport projects, and infrastructure investment priorities.",
+      "specificity": "broad"
+    },
+    {
+      "id": "road_safety_and_drunk_driving",
+      "label": "Road Safety and Drunk Driving",
+      "description": "Traffic safety, alcohol in traffic, and road-regulation enforcement.",
+      "specificity": "specific"
+    },
+    {
+      "id": "energy_nuclear_vs_renewables",
+      "label": "Energy Policy (Nuclear vs Renewables)",
+      "description": "Electricity production mix, nuclear policy, and renewable energy transition.",
+      "specificity": "broad"
+    },
+    {
+      "id": "climate_policy_and_emissions",
+      "label": "Climate Policy and Emissions",
+      "description": "Climate mitigation, emissions reduction, climate responsibility, and policy pace.",
+      "specificity": "broad"
+    },
+    {
+      "id": "forestry_biodiversity_and_conservation",
+      "label": "Forestry, Biodiversity, and Conservation",
+      "description": "Forest governance, biodiversity protection, and ecological stewardship.",
+      "specificity": "specific"
+    },
+    {
+      "id": "agriculture_and_food_production",
+      "label": "Agriculture and Food Production",
+      "description": "Farming conditions, food production, and agricultural competitiveness.",
+      "specificity": "broad"
+    },
+    {
+      "id": "fisheries_and_coastal_livelihoods",
+      "label": "Fisheries and Coastal Livelihoods",
+      "description": "Fishing regulation, sustainability, and livelihoods in fishing communities.",
+      "specificity": "specific"
+    },
+    {
+      "id": "hunting_wildlife_and_predator_management",
+      "label": "Hunting, Wildlife, and Predator Management",
+      "description": "Wildlife control, hunting rights, and predator-population controversies.",
+      "specificity": "specific"
+    },
+    {
+      "id": "immigration_asylum_and_refugees",
+      "label": "Immigration, Asylum, and Refugees",
+      "description": "Migration flows, asylum rights, refugee protection, and border governance.",
+      "specificity": "broad"
+    },
+    {
+      "id": "asylum_case_processing_and_migrationsverket",
+      "label": "Asylum Case Processing and Migration Agency",
+      "description": "Procedural/legal handling of asylum applications and migration administration.",
+      "specificity": "specific"
+    },
+    {
+      "id": "integration_and_labor_immigration",
+      "label": "Integration and Labor Immigration",
+      "description": "Integration outcomes and labor-market participation of newcomers.",
+      "specificity": "specific"
+    },
+    {
+      "id": "crime_policing_and_public_order",
+      "label": "Crime, Policing, and Public Order",
+      "description": "Crime control, policing resources, victim protection, and social safety.",
+      "specificity": "broad"
+    },
+    {
+      "id": "youth_crime_and_prevention",
+      "label": "Youth Crime and Prevention",
+      "description": "Juvenile offending, prevention policies, and responses to youth criminality.",
+      "specificity": "specific"
+    },
+    {
+      "id": "criminal_justice_and_rehabilitation",
+      "label": "Criminal Justice and Rehabilitation",
+      "description": "Courts, sentencing, prisons, rehabilitation, and recidivism policy.",
+      "specificity": "specific"
+    },
+    {
+      "id": "defense_nato_and_national_security",
+      "label": "Defense, NATO, and National Security",
+      "description": "Military capability, defense doctrine, NATO commitments, and state security.",
+      "specificity": "broad"
+    },
+    {
+      "id": "russia_ukraine_war",
+      "label": "Russia-Ukraine War",
+      "description": "Normative and strategic arguments about Russia’s invasion of Ukraine.",
+      "specificity": "specific"
+    },
+    {
+      "id": "israel_palestine_conflict",
+      "label": "Israel-Palestine Conflict",
+      "description": "Humanitarian/legal framing and moral judgments regarding Israel-Palestine.",
+      "specificity": "specific"
+    },
+    {
+      "id": "authoritarian_regimes_and_human_rights",
+      "label": "Authoritarian Regimes and Human Rights",
+      "description": "General condemnation of authoritarianism, repression, and rights abuses.",
+      "specificity": "broad"
+    },
+    {
+      "id": "iran_regime_and_human_rights",
+      "label": "Iran Regime and Human Rights",
+      "description": "Specific human-rights and democracy critiques related to Iran.",
+      "specificity": "specific"
+    },
+    {
+      "id": "turkey_kurdish_rights_and_democracy",
+      "label": "Turkey, Kurdish Rights, and Democracy",
+      "description": "Specific rights and democratic-governance concerns tied to Turkey/Kurdish issues.",
+      "specificity": "specific"
+    },
+    {
+      "id": "china_human_rights_and_sanctions",
+      "label": "China Human Rights and Sanctions",
+      "description": "Specific arguments on rights abuses in China and sanction/diplomatic responses.",
+      "specificity": "specific"
+    },
+    {
+      "id": "arms_exports_to_authoritarian_regimes",
+      "label": "Arms Exports to Authoritarian Regimes",
+      "description": "Ethical and strategic disputes over arms trade with repressive states.",
+      "specificity": "specific"
+    },
+    {
+      "id": "foreign_aid_and_humanitarian_assistance",
+      "label": "Foreign Aid and Humanitarian Assistance",
+      "description": "Aid priorities, development support, and humanitarian commitments abroad.",
+      "specificity": "broad"
+    },
+    {
+      "id": "eu_membership_and_national_sovereignty",
+      "label": "EU Membership and National Sovereignty",
+      "description": "Trade-offs between European integration and national democratic control.",
+      "specificity": "broad"
+    },
+    {
+      "id": "nordic_european_cooperation_and_diplomacy",
+      "label": "Nordic/European Cooperation and Diplomacy",
+      "description": "Cross-national collaboration, diplomacy, and cooperative governance.",
+      "specificity": "broad"
+    },
+    {
+      "id": "media_public_service_and_press_freedom",
+      "label": "Media, Public Service, and Press Freedom",
+      "description": "Public broadcasting, media plurality, and democratic communication norms.",
+      "specificity": "broad"
+    },
+    {
+      "id": "culture_heritage_and_arts_funding",
+      "label": "Culture, Heritage, and Arts Funding",
+      "description": "Support for arts, museums, cultural heritage, and identity institutions.",
+      "specificity": "broad"
+    },
+    {
+      "id": "gender_equality_and_womens_rights",
+      "label": "Gender Equality and Women’s Rights",
+      "description": "Gender equality, representation, discrimination, and women’s rights claims.",
+      "specificity": "broad"
+    },
+    {
+      "id": "violence_against_women_and_shelters",
+      "label": "Violence Against Women and Shelters",
+      "description": "Domestic violence policy, victim support, and protective services.",
+      "specificity": "specific"
+    },
+    {
+      "id": "anti_discrimination_and_racism",
+      "label": "Anti-discrimination and Racism",
+      "description": "Racism, discriminatory treatment, and equality-protection frameworks.",
+      "specificity": "broad"
+    },
+    {
+      "id": "prostitution_and_human_trafficking",
+      "label": "Prostitution and Human Trafficking",
+      "description": "Arguments about exploitation, trafficking, and policy interventions.",
+      "specificity": "specific"
+    },
+    {
+      "id": "privacy_surveillance_and_data_rights",
+      "label": "Privacy, Surveillance, and Data Rights",
+      "description": "Integrity/privacy concerns versus surveillance and security goals.",
+      "specificity": "broad"
+    },
+    {
+      "id": "democratic_participation_and_elections",
+      "label": "Democratic Participation and Elections",
+      "description": "Voting, civic participation, democratic legitimacy, and representation.",
+      "specificity": "broad"
+    },
+    {
+      "id": "municipal_and_regional_governance",
+      "label": "Municipal and Regional Governance",
+      "description": "Local government responsibilities, coordination, and public-service provision.",
+      "specificity": "broad"
+    },
+    {
+      "id": "rural_regional_development_and_service_access",
+      "label": "Rural/Regional Development and Service Access",
+      "description": "Urban-rural disparities, regional investment, and service coverage.",
+      "specificity": "broad"
+    },
+    {
+      "id": "innovation_research_and_industrial_strategy",
+      "label": "Innovation, Research, and Industrial Strategy",
+      "description": "Innovation policy, research investments, and national competitiveness.",
+      "specificity": "broad"
+    },
+    {
+      "id": "consumer_protection_and_market_regulation",
+      "label": "Consumer Protection and Market Regulation",
+      "description": "Consumer rights, market fairness, and protective regulation.",
+      "specificity": "broad"
+    },
+    {
+      "id": "gambling_and_addiction_policy",
+      "label": "Gambling and Addiction Policy",
+      "description": "Regulation of gambling markets and harms from gambling addiction.",
+      "specificity": "specific"
+    },
+    {
+      "id": "alcohol_policy_and_systembolaget",
+      "label": "Alcohol Policy and Systembolaget",
+      "description": "Alcohol sales restrictions, public health framing, and monopoly governance.",
+      "specificity": "specific"
+    },
+    {
+      "id": "drug_policy_and_substance_abuse",
+      "label": "Drug Policy and Substance Abuse",
+      "description": "Narcotics policy, addiction treatment, and social/health consequences.",
+      "specificity": "specific"
+    },
+    {
+      "id": "property_rights_and_expropriation",
+      "label": "Property Rights and Expropriation",
+      "description": "Ownership rights, state intervention, and expropriation disputes.",
+      "specificity": "specific"
+    },
+    {
+      "id": "procedural_parliamentary_management",
+      "label": "Procedural Parliamentary Management",
+      "description": "Neutral procedural interventions on debate flow, timing, or formal process.",
+      "specificity": "broad"
+    },
+    {
+      "id": "formal_greetings_and_speaker_address",
+      "label": "Formal Greetings and Speaker Address",
+      "description": "Ceremonial phrases, greetings, and role-address formulas with minimal policy content.",
+      "specificity": "specific"
+    },
+    {
+      "id": "government_vs_opposition_accountability",
+      "label": "Government vs Opposition Accountability",
+      "description": "Party-blame and accountability framing around governing performance.",
+      "specificity": "broad"
+    }
+  ],
+  "styles": [
+    {
+      "id": "procedural_neutral_descriptive",
+      "label": "Procedural Neutral-Descriptive",
+      "description": "Primarily procedural or descriptive statements without substantive moral argument.",
+      "specificity": "broad"
+    },
+    {
+      "id": "formal_ceremonial_address",
+      "label": "Formal Ceremonial Address",
+      "description": "Formulaic greetings, speaker-address language, and protocol-centered rhetoric.",
+      "specificity": "specific"
+    },
+    {
+      "id": "factual_technical_reporting",
+      "label": "Factual/Technical Reporting",
+      "description": "Technocratic exposition emphasizing facts, administration, and policy mechanics.",
+      "specificity": "broad"
+    },
+    {
+      "id": "legal_institutional_reasoning",
+      "label": "Legal-Institutional Reasoning",
+      "description": "Arguments grounded in laws, institutions, constitutional constraints, and procedure.",
+      "specificity": "broad"
+    },
+    {
+      "id": "rights_based_deontological_appeal",
+      "label": "Rights-Based Deontological Appeal",
+      "description": "Moral claims framed as duties, rights, and non-negotiable obligations.",
+      "specificity": "broad"
+    },
+    {
+      "id": "fairness_equality_justice_frame",
+      "label": "Fairness-Equality-Justice Frame",
+      "description": "Reasoning centered on distributive fairness, equality, and justice norms.",
+      "specificity": "broad"
+    },
+    {
+      "id": "consequentialist_cost_benefit",
+      "label": "Consequentialist Cost-Benefit",
+      "description": "Evaluation based on likely outcomes, trade-offs, and aggregate social consequences.",
+      "specificity": "broad"
+    },
+    {
+      "id": "welfare_state_solidarity_frame",
+      "label": "Welfare-State Solidarity Frame",
+      "description": "Collective solidarity, social protection, and public responsibility rhetoric.",
+      "specificity": "specific"
+    },
+    {
+      "id": "market_efficiency_competitiveness_frame",
+      "label": "Market-Efficiency Competitiveness Frame",
+      "description": "Economic-efficiency, productivity, and competitiveness-oriented argumentation.",
+      "specificity": "specific"
+    },
+    {
+      "id": "public_safety_security_frame",
+      "label": "Public Safety and Security Frame",
+      "description": "Threat minimization and societal safety as central argumentative focus.",
+      "specificity": "broad"
+    },
+    {
+      "id": "humanitarian_compassion_frame",
+      "label": "Humanitarian-Compassion Frame",
+      "description": "Empathy, vulnerability, and care for affected populations drive the reasoning.",
+      "specificity": "broad"
+    },
+    {
+      "id": "victim_protection_frame",
+      "label": "Victim-Protection Frame",
+      "description": "Prioritizes protection of victims and vulnerable groups as core moral imperative.",
+      "specificity": "specific"
+    },
+    {
+      "id": "law_and_order_punitive_frame",
+      "label": "Law-and-Order Punitive Frame",
+      "description": "Emphasis on deterrence, punishment, tougher enforcement, and sanctions.",
+      "specificity": "specific"
+    },
+    {
+      "id": "preventive_rehabilitation_frame",
+      "label": "Preventive-Rehabilitation Frame",
+      "description": "Focus on prevention, reintegration, and long-term rehabilitation outcomes.",
+      "specificity": "specific"
+    },
+    {
+      "id": "democratic_values_rule_of_law_frame",
+      "label": "Democratic Values and Rule-of-Law Frame",
+      "description": "Appeals to democracy, legitimacy, rights institutions, and constitutional norms.",
+      "specificity": "broad"
+    },
+    {
+      "id": "national_sovereignty_frame",
+      "label": "National Sovereignty Frame",
+      "description": "Prioritizes state autonomy, border/control authority, and national self-determination.",
+      "specificity": "specific"
+    },
+    {
+      "id": "anti_authoritarian_moral_condemnation",
+      "label": "Anti-Authoritarian Moral Condemnation",
+      "description": "Explicit moral condemnation of repressive regimes and rights violations.",
+      "specificity": "specific"
+    },
+    {
+      "id": "adversarial_blame_attack",
+      "label": "Adversarial Blame/Attack",
+      "description": "Opposition-focused attack rhetoric, blame assignment, and moralized political confrontation.",
+      "specificity": "broad"
+    },
+    {
+      "id": "pragmatic_compromise_consensus",
+      "label": "Pragmatic Compromise/Consensus",
+      "description": "Negotiation-oriented style emphasizing compromise and workable middle-ground solutions.",
+      "specificity": "broad"
+    },
+    {
+      "id": "evidence_statistics_expert_reference",
+      "label": "Evidence-Statistics-Expert Reference",
+      "description": "Justification through data points, expert authority, and empirical claims.",
+      "specificity": "broad"
+    },
+    {
+      "id": "historical_analogy_ideological_warning",
+      "label": "Historical Analogy/Ideological Warning",
+      "description": "Uses historical examples or ideological comparisons to warn against current choices.",
+      "specificity": "specific"
+    },
+    {
+      "id": "moral_polarization_black_white",
+      "label": "Moral Polarization (Black-and-White)",
+      "description": "Binary moral framing where positions are cast as clearly right vs wrong.",
+      "specificity": "specific"
+    },
+    {
+      "id": "identity_us_them_polarization",
+      "label": "Identity Us-vs-Them Polarization",
+      "description": "In-group/out-group framing that emphasizes identity boundaries and conflict.",
+      "specificity": "specific"
+    }
+  ]
+}
