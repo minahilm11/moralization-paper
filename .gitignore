@@ -11,8 +11,8 @@ data/records/
 data/persons/
 data/new_prompt_noshot_4omini_analysis_input.parquet
 data/speeches_1990_2022.parquet
-data/policy_topics.parquet
 data/policy_topics.provenance.json
 *.pkl
+*.pkl.gz
 *.pickle
 *.log

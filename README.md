@@ -34,7 +34,7 @@ Or open the notebooks in Jupyter and run all cells with the **Moralization** ker
 | `appendix/examples.ipynb` | Main Table 1; Appendix Tables A2.1/A3.1 |
 | `scripts/clustering_visuals.ipynb` | Additional clustering and topic/style visuals |
 
-Main Figure 5, Appendix A5, A6.2-A6.4 and A7, and the topic-controlled columns of Table 2 require `data/policy_topics.parquet` (`original_row_idx`, `topic_label`) or `data/data_with_topics.pkl`. These files are not included; the corresponding sections are skipped until labels are available.
+`data/policy_topics.parquet` contains the eleven policy-topic labels for all 427,014 speeches, keyed by `original_row_idx`. These labels are used for Main Figure 5, the topic-controlled columns of Table 2, and Appendix A5, A6.2-A6.4 and A7.
 
 ## Classification and clustering
 
